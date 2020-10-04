@@ -156,17 +156,17 @@ class _HomeState extends State<Home> {
                       child:_slider,
                     ),
                     SizedBox(height:30.0),
-                    // Container(
-                    //   padding: EdgeInsets.only(bottom:20.0),
-                    //  child: Text(
-                    //     'Professional Services',
-                    //     style: TextStyle(
-                    //       fontFamily: 'Montserrat',
-                    //       fontSize: 20.0,
-                    //       fontWeight: FontWeight.w500,
-                    //     ),
-                    //   ),
-                    // ),
+                    Container(
+                       padding: EdgeInsets.only(bottom:20.0),
+                       child: Text(
+                         'Professional Services',
+                         style: TextStyle(
+                           fontFamily: 'Montserrat',
+                           fontSize: 20.0,
+                           fontWeight: FontWeight.bold,
+                         ),
+                       ),
+                     ),
                     ListView.builder(
                     scrollDirection: Axis.vertical,
                     shrinkWrap: true,
@@ -181,12 +181,7 @@ class _HomeState extends State<Home> {
                                 height: 130.0,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20.0),
-                                  gradient: LinearGradient(
-                                    colors: [Colors.deepPurple[200],Colors.grey[200]],
-                                    begin: Alignment.topLeft,
-                                    end: Alignment.bottomRight,
-                                  
-                                    ),
+                                  colors:Colors.grey[50],
                                   boxShadow: [
                                     BoxShadow(
                                       color: Colors.black38,
@@ -210,20 +205,6 @@ class _HomeState extends State<Home> {
                                           )
                                         ],
                                       ),
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.start,
-                                        children: [
-                                          Container(
-                                            height: 80.0,
-                                            child: Image.network(
-                                             'https://www.flaticon.com/svg/static/icons/svg/1568/1568044.svg',
-                                              height: 60,
-                                              
-                                              fit: BoxFit.cover,
-                                              ),
-                                          )
-                                        ],
-                                      )
                                     ],
                                   )
                                 ),
