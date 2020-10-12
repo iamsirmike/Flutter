@@ -7,12 +7,6 @@ import 'package:psycup/screens/services.dart';
 
 
 
-void main(){
-  runApp(Home());
-
-}
-
-
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -168,7 +162,7 @@ class _HomeState extends State<Home> {
                        ),
                      ),
                     ListView.builder(
-                    scrollDirection: Axis.vertical,
+                    physics: ScrollPhysics(),
                     shrinkWrap: true,
                     itemCount: 9,
                     itemBuilder: (context, index){
@@ -181,7 +175,7 @@ class _HomeState extends State<Home> {
                                 height: 130.0,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20.0),
-                                  colors:Colors.grey[50],
+                                  color:Colors.grey[50],
                                   boxShadow: [
                                     BoxShadow(
                                       color: Colors.black38,
